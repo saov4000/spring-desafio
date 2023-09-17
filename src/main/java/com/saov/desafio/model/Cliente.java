@@ -7,7 +7,7 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+    private String nome;
     @ManyToOne
     private Endereco endereco;
 
@@ -20,11 +20,11 @@ public class Cliente {
     }
 
     public String getName() {
-        return name;
+        return nome;
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.nome = name;
     }
 
     public Endereco getEndereco() {

@@ -7,10 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @EnableFeignClients
 @SpringBootApplication
-@ComponentScan(basePackages = "com.saov.desafio,controller")
 public class DesafioApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DesafioApplication.class, args);
 	}
-
 }
